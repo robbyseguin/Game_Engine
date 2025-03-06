@@ -2,3 +2,16 @@ GameEngine/.vs/GameEngine/FileContentIndex/999c463a-d903-405d-9c76-b34a7dcb9f6e.
 GameEngine/.vs/GameEngine/FileContentIndex/a426e1a8-fae7-44c2-877c-d6ac97304269.vsidx
 GameEngine/.vs/GameEngine/FileContentIndex/b7056732-e42e-44c9-8e52-dbd6c453786a.vsidx
 GameEngine/.vs/GameEngine/v17/Browse.VC.opendb
+# Prerequisites
+*.d
+*.vsidx
+*.opendb
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
