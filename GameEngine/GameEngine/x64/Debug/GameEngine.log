@@ -1,4 +1,2 @@
-﻿  EntityManager.cpp
-  GameEngine.cpp
-  Generating Code...
+﻿  ComponentManager.cpp
   GameEngine.vcxproj -> R:\GameEngine\Game_Engine\GameEngine\x64\Debug\GameEngine.exe

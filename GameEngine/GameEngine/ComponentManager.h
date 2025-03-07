@@ -12,8 +12,10 @@ public:
 
 	template <typename T>
 	void AddComponent(Entity entity, T& component);
+
 	template <typename T>
 	T* GetComponent(Entity entity);
+
 	template <typename T>
 	void RemoveComponent(Entity entity);
 
