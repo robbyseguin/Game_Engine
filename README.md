@@ -4,21 +4,18 @@ Im making a Mini Game Engine to push the limit of my Knowledge in C++ and also a
 
 Game Engine Modules to Complete:
 
--Entity-Component-System (ECS) - [x]
-```
--Rendering Engine (2D or 3D) - [ ]
-
-```
--Input System - [ ]
--Physics Engine - [ ]
--Audio Engine - [ ]
--Animation System - [ ]
--Scene Graph/World Management - [ ]
--Networking Module - [ ]
--Scripting System - [ ]
--UI System (User Interface) - [ ]
--Game Logic Framework - [ ]
--Memory Management Module - [ ]
+-Entity-Component-System (ECS) - [x]  
+-Rendering Engine (2D or 3D) - [ ]  
+-Input System - [ ]  
+-Physics Engine - [ ]  
+-Audio Engine - [ ]  
+-Animation System - [ ]  
+-Scene Graph/World Management - [ ]  
+-Networking Module - [ ]  
+-Scripting System - [ ]  
+-UI System (User Interface) - [ ]  
+-Game Logic Framework - [ ]  
+-Memory Management Module - [ ]  
 
 
 ### Prerequisites
