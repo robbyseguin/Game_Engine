@@ -11,3 +11,5 @@
 
 # Precompiled Headers
 *.gch
+
+GameEngine/.vs/
