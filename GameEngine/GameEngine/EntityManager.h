@@ -3,6 +3,7 @@
 #include <vector>
 #include <queue>
 #include <stdexcept>
+#include <bitset>
 
 using Entity = uint32_t;
 
@@ -17,7 +18,6 @@ public:
 		for (Entity i = 0; i < MAX_ENTITIES; i++)
 		{
 			availableEntities.push(i);
-			activeEntities.push_back(false);
 		}
 	}
 
@@ -29,24 +29,24 @@ public:
 		}
 		Entity id = availableEntities.front();
 		availableEntities.pop();
-		activeEntities[id] = true;	
+		activeEntities.set(id);	
 		return id;
 	}
 
 	void DestroyEntity(Entity entity)
 	{
-		activeEntities[entity] = false;
+		activeEntities.reset(entity);
 		availableEntities.push(entity);
 	}
 
 	bool IsActive(Entity entity)
 	{
-		return activeEntities[entity];
+		return activeEntities.test(entity);
 	}
 
 private:
 	std::queue<Entity> availableEntities;
-	std::vector<bool> activeEntities;
+	std::bitset<MAX_ENTITIES> activeEntities;
 
 };
 
