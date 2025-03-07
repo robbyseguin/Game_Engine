@@ -11,20 +11,13 @@ class ComponentManager
 public:
 
 	template <typename T>
-	void AddComponent(Entity entity, T& component)
-	{
-		entityComponents[typeid(T)][entity] = new T(component);
-	}
-
+	void AddComponent(Entity entity, T& component);
 	template <typename T>
-	T* GetComponent(Entity entity)
-	{
-		auto it = entityComponents[typeid(T)].find(entity);
-		return (it != entityComponents[typeid(T)].end()) ? static_cast<T*>(it->second.get()) : nullptr;
-	}
+	T* GetComponent(Entity entity);
+	template <typename T>
+	void RemoveComponent(Entity entity);
 
-
-private:
+private: 
 	std::unordered_map<Entity, std::unordered_map<std::type_index, std::shared_ptr<void>>> entityComponents;
 };
 
